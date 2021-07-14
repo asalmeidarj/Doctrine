@@ -1,0 +1,22 @@
+{
+    "name": "asalmeidarj/doctrine",
+    "description": "Aprendendo Doctrine",
+    "type": "library",
+    "license": "GPL 3.0",
+    "autoload": {
+        "psr-4": {
+            "Asalmeidarj\\Doctrine\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "asalmeidarj",
+            "email": "asalmeidarj@gmail.com"
+        }
+    ],
+    "require": {
+        "doctrine/orm": "^2.6.2",
+        "symfony/yaml": "2.*",
+        "symfony/cache": "^5.3"
+    }
+}
