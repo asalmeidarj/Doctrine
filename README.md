@@ -12,17 +12,25 @@ Aprendendo Doctrine
 - Acesse a pasta do projeto pelo terminal e inicie o composer (comando "composer init").
 - Configure o arquivo composer.json:
 
-    "autoload": {
+`"autoload":`
+```
+    {
         "psr-4": {
             "Asalmeidarj\\Doctrine\\": "src/"
         }
     },
 
-    "require": {
+```
+
+`"require":`
+
+```
+    {
         "doctrine/orm": "^2.6.2",
         "symfony/yaml": "2.*",
         "symfony/cache": "^5.3"
     }
+```
 
 - Após configurar o composer.json vá a linha de comando e digite "composer install".
 - Crie o diretório Helper dentro de src .
