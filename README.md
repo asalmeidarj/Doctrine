@@ -48,6 +48,12 @@ Aprendendo Doctrine
 - Use o comando "php vendor\bin\doctrine orm:info". Se estiver tudo ok, irá reconhecer a classe Aluno.
 - Use o comando "php vendor\bin\doctrine orm:mapping:describe Aluno" para visualizar algumas informações sobre a classe Aluno.
 
+## Criando tabela com Doctrine
+
+- Após o mapeamento da classe Aluno, digite no terminal o comando:
+    php vendor\bin\doctrine orm:schema-tool:create
+
+
 
 
 
