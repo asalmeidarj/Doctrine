@@ -28,7 +28,7 @@ Aprendendo Doctrine
 - Crie o diretório Helper dentro de src .
 - Crie a classe EntityManagerFactory dentro da pasta Helper .
 - Digite no terminal: composer dumpautoload
-- Cria um arquivo teste.php para testar a classe EntityManagerFactory.
+- Criar um arquivo teste.php para testar a classe EntityManagerFactory.
 
 
 
