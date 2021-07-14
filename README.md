@@ -30,5 +30,9 @@ Aprendendo Doctrine
 - Digite no terminal: composer dumpautoload
 - Criar um arquivo teste.php para testar a classe EntityManagerFactory.
 
+## Gerando o Esquema de Banco de Dados
+
+
+
 
 
