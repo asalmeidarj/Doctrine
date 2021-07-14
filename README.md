@@ -40,6 +40,13 @@ Aprendendo Doctrine
 
 ## Gerando o Esquema de Banco de Dados
 
+- Crie o arquivo cli-config.php na pasta um nível acima de src/.
+- Configure o arquivo cli-config.php
+- No terminal use o comando "php vendor\bin\doctrine". Se estiver tudo ok, irá aparecer uma lista de comandos do doctrine.
+- Crie o diretório Entity dentro de src/
+- Crie a classe Aluno dentro de Entiy
+- Use o comando "php vendor\bin\doctrine orm:info". Se estiver tudo ok, irá reconhecer a classe Aluno.
+- Use o comando "php vendor\bin\doctrine orm:mapping:describe Aluno" para visualizar algumas informações sobre a classe Aluno.
 
 
 
