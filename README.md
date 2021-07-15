@@ -9,7 +9,10 @@ Aprendendo Doctrine
 ## Instalando Doctrine e iniciando o projeto
 
 - Criar uma nova pasta para o projeto.
-- Acesse a pasta do projeto pelo terminal e inicie o composer (comando "composer init").
+- Acesse a pasta do projeto pelo terminal e inicie o composer digitando:
+    ```
+        composer init
+    ```
 - Configure o arquivo composer.json:
 
 `"autoload":`
@@ -63,12 +66,4 @@ Aprendendo Doctrine
 - Altere instruçao `$aluno->setNome('Daniel Louro Costa');` para `$aluno->setNome($argv[1]);` . Desta forma será possível inserir os alunos com o seguinte comando no terminal:
     ```
         php commands\insert-aluno.php "NOME DO ALUNO"
-
     ```
-
-**OBS.: clique em criar-aluno.php para ver o script pronto.
-
-
-
-
-
