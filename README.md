@@ -73,7 +73,7 @@ Aprendendo Doctrine
 - Crie um arquivo [buscar-alunos.php](https://github.com/asalmeidarj/Doctrine/blob/main/commands/buscar-alunos.php) .
 - Insira alguns alunos no banco de dados e teste o arquivo buscar-alunos.php.
 ```
-    OBS.: Utilize as funções dentro de buscar-alunos e faça uma 
+    OBS.: Utilize as funções dentro de buscar-alunos.php e faça uma 
     implementação de acordo com a sua necessidade.
 ```
 
