@@ -42,7 +42,7 @@ Aprendendo Doctrine
 
 - Crie o arquivo cli-config.php na pasta um nível acima de src/.
 - Configure o arquivo cli-config.php
-- No terminal use o comando "php vendor\bin\doctrine". Se estiver tudo ok, irá aparecer uma lista de comandos do doctrine.
+- No terminal use o comando "php vendor\bin\doctrine list". Se estiver tudo ok, irá aparecer uma lista de comandos do doctrine.
 - Crie o diretório Entity dentro de src/
 - Crie a classe Aluno dentro de Entiy
 - Use o comando "php vendor\bin\doctrine orm:info". Se estiver tudo ok, irá reconhecer a classe Aluno.
@@ -52,6 +52,14 @@ Aprendendo Doctrine
 
 - Após o mapeamento da classe Aluno, digite no terminal o comando:
     php vendor\bin\doctrine orm:schema-tool:create
+
+
+## Usando o método persist e flush 
+
+- Crie um diretório commands na pasta um nível acima de src/.
+- Dentro do diretório commands/ crie um arquivo [criar-aluno.php][https://github.com/asalmeidarj/Doctrine/blob/main/commands/criar-aluno.php]
+
+**OBS.: clique em criar-aluno.php para ver o script pronto.
 
 
 
