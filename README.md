@@ -12,7 +12,7 @@ Aprendendo Doctrine
 - Acesse a pasta do projeto pelo terminal e inicie o composer digitando:
     ```
         composer init
-    ```-
+    ```
 - Configure o arquivo composer.json:
 
 `"autoload":`
