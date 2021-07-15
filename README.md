@@ -39,7 +39,7 @@ Aprendendo Doctrine
 - Crie o diretório Helper dentro de src .
 - Crie a [classe EntityManagerFactory](https://github.com/asalmeidarj/Doctrine/blob/main/src/Helper/EntityManagerFactory.php) dentro da pasta Helper.
 - Digite no terminal: `composer dumpautoload`
-- Criar um arquivo teste.php para testar a classe EntityManagerFactory.
+- Criar um arquivo [teste.php](https://github.com/asalmeidarj/Doctrine/blob/main/teste.php) para testar a classe EntityManagerFactory.
 
 ## Gerando o Esquema de Banco de Dados
 
@@ -63,7 +63,7 @@ Aprendendo Doctrine
 - Dentro do diretório commands/ crie um arquivo [criar-aluno.php](https://github.com/asalmeidarj/Doctrine/blob/main/commands/criar-aluno.php).
 - Crie uma cópia de criar-aluno.php e renomeie para [insert-aluno.php](https://github.com/asalmeidarj/Doctrine/blob/main/commands/insert-aluno.php) . 
 - Abra o arquivo insert-aluno.php
-- Altere instruçao `$aluno->setNome('Daniel Louro Costa');` para `$aluno->setNome($argv[1]);` . Desta forma será possível inserir os alunos com o seguinte comando no terminal:
+- Altere a instruçao `$aluno->setNome('Daniel Louro Costa');` para `$aluno->setNome($argv[1]);` . Desta forma será possível inserir os alunos com o seguinte comando no terminal:
     ```
         php commands\insert-aluno.php "NOME DO ALUNO"
     ```
