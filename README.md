@@ -47,7 +47,7 @@ Aprendendo Doctrine
 - Configure o arquivo [cli-config.php](https://github.com/asalmeidarj/Doctrine/blob/main/cli-config.php)
 - No terminal use o comando `php vendor\bin\doctrine list`. Se estiver tudo ok, irá aparecer uma lista de comandos do doctrine.
 - Crie o diretório Entity dentro de src/
-- Crie a classe Aluno dentro de Entiy
+- Crie a classe Aluno dentro de Entity
 - Use o comando `php vendor\bin\doctrine orm:info`. Se estiver tudo ok, irá reconhecer a classe Aluno.
 - Use o comando `php vendor\bin\doctrine orm:mapping:describe Aluno` para visualizar algumas informações sobre a classe Aluno.
 
@@ -67,3 +67,13 @@ Aprendendo Doctrine
     ```
         php commands\insert-aluno.php "NOME DO ALUNO"
     ```
+
+## Usando os métodos findAll, find, findBy e findOneBy
+
+- Crie um arquivo [buscar-alunos.php](https://github.com/asalmeidarj/Doctrine/blob/main/commands/buscar-alunos.php) .
+- Insira alguns alunos no banco de dados e teste o arquivo buscar-alunos.php.
+```
+    OBS.: Utilize as funções dentro de buscar-alunos e faça uma 
+    implementação de acordo com a sua necessidade.
+```
+
