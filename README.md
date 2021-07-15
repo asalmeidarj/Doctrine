@@ -57,7 +57,11 @@ Aprendendo Doctrine
 ## Usando o método persist e flush 
 
 - Crie um diretório commands na pasta um nível acima de src/.
-- Dentro do diretório commands/ crie um arquivo [criar-aluno.php](https://github.com/asalmeidarj/Doctrine/blob/main/commands/criar-aluno.php)
+- Dentro do diretório commands/ crie um arquivo [criar-aluno.php](https://github.com/asalmeidarj/Doctrine/blob/main/commands/criar-aluno.php).
+- Crie uma cópia de criar-aluno.php e renomei para [insert-aluno.php](https://github.com/asalmeidarj/Doctrine/blob/main/commands/insert-aluno.php) . 
+- Abra o arquivo insert-aluno.php
+- Altere instruçao "$aluno->setNome('Daniel Louro Costa');" para "$aluno->setNome($argv[1]);" . Desta forma será possível inserir nos alunos com o seguinte comando no terminal:
+    php commands\insert-aluno.php "NOME DO ALUNO"
 
 **OBS.: clique em criar-aluno.php para ver o script pronto.
 
