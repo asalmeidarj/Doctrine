@@ -42,16 +42,16 @@ Aprendendo Doctrine
 
 - Crie o arquivo cli-config.php na pasta um nível acima de src/.
 - Configure o arquivo cli-config.php
-- No terminal use o comando "php vendor\bin\doctrine list". Se estiver tudo ok, irá aparecer uma lista de comandos do doctrine.
+- No terminal use o comando `php vendor\bin\doctrine list`. Se estiver tudo ok, irá aparecer uma lista de comandos do doctrine.
 - Crie o diretório Entity dentro de src/
 - Crie a classe Aluno dentro de Entiy
-- Use o comando "php vendor\bin\doctrine orm:info". Se estiver tudo ok, irá reconhecer a classe Aluno.
-- Use o comando "php vendor\bin\doctrine orm:mapping:describe Aluno" para visualizar algumas informações sobre a classe Aluno.
+- Use o comando `php vendor\bin\doctrine orm:info`. Se estiver tudo ok, irá reconhecer a classe Aluno.
+- Use o comando `php vendor\bin\doctrine orm:mapping:describe Aluno` para visualizar algumas informações sobre a classe Aluno.
 
 ## Criando tabela com Doctrine
 
 - Após o mapeamento da classe Aluno, digite no terminal o comando:
-    php vendor\bin\doctrine orm:schema-tool:create
+    `php vendor\bin\doctrine orm:schema-tool:create`
 
 
 ## Usando o método persist e flush 
@@ -60,8 +60,11 @@ Aprendendo Doctrine
 - Dentro do diretório commands/ crie um arquivo [criar-aluno.php](https://github.com/asalmeidarj/Doctrine/blob/main/commands/criar-aluno.php).
 - Crie uma cópia de criar-aluno.php e renomei para [insert-aluno.php](https://github.com/asalmeidarj/Doctrine/blob/main/commands/insert-aluno.php) . 
 - Abra o arquivo insert-aluno.php
-- Altere instruçao `$aluno->setNome('Daniel Louro Costa');` para `$aluno->setNome($argv[1]);` . Desta forma será possível inserir nos alunos com o seguinte comando no terminal:
-    ```php commands\insert-aluno.php "NOME DO ALUNO"```
+- Altere instruçao `$aluno->setNome('Daniel Louro Costa');` para `$aluno->setNome($argv[1]);` . Desta forma será possível inserir os alunos com o seguinte comando no terminal:
+    ```
+        php commands\insert-aluno.php "NOME DO ALUNO"
+
+    ```
 
 **OBS.: clique em criar-aluno.php para ver o script pronto.
 
