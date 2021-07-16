@@ -70,10 +70,21 @@ Aprendendo Doctrine
 
 ## Usando os métodos findAll, find, findBy e findOneBy
 
-- Crie um arquivo [buscar-alunos.php](https://github.com/asalmeidarj/Doctrine/blob/main/commands/buscar-alunos.php) .
+- Crie um arquivo [buscar-alunos.php](https://github.com/asalmeidarj/Doctrine/blob/main/commands/buscar-alunos.php) dentro do diretório commands.
 - Insira alguns alunos no banco de dados e teste o arquivo buscar-alunos.php.
 ```
     OBS.: Utilize as funções dentro de buscar-alunos.php e faça uma 
     implementação de acordo com a sua necessidade.
 ```
 
+## Atualizando um dado utilizando o método find de EentityManagerInterface
+
+- Crie um arquivo [atualizar-nome-aluno.php](https://github.com/asalmeidarj/Doctrine/blob/main/commands/atualizar-nome-aluno.php) dentro do diretório commands.
+- Após criar o arquivo atualize o nome de um aluno pelo terminal digitando:
+```
+    php commands\atualizar-nome-aluno.php 1 "Frederico"
+```
+- Após atualizar o nome do aluno verifique digitando no terminal:
+```
+    php commands\mostrar-alunos.php
+```
