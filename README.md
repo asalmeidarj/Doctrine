@@ -97,3 +97,33 @@ Aprendendo Doctrine
 ```
     Obs.: No comando acima onde lê-se id substitua pelo número de id desejado.
 
+## Criando uma nova Entidade Telefone e relacionando com Aluno
+
+- Crie um arquivo [Telefone.php](https://github.com/asalmeidarj/Doctrine/blob/main/src/Entity/Telefone.php) dentro do diretório src/Entity.
+- A classe Telefone terá os atributos privados $id, $number e $aluno e os métodos públicos de getter e setter como pode ser visto no arquivo [Telefone.php](https://github.com/asalmeidarj/Doctrine/blob/main/src/Entity/Telefone.php).
+- Note que é importante indicar para o Doctrine que a classe Telefone é uma entidade e será anexada na tabela Telefones com as seguintes anotações:
+```
+    /**
+    * @ORM\Entity
+    * @ORM\Table(name="Telefones")
+    */
+    class Telefone
+    {
+        //
+    }
+```
+
+- Em seguida precisamos em forma que id é uma PRIMARY KEY com AUTO INCREMENT e do tipo INTEGER com as seguintes anotações:
+```
+    /**
+     * @ORM\Id
+     * @ORM\GeneratedValue
+     * @ORM\Column(type="integer")
+     * 
+     */
+    private $id;
+```
+
+
+
+
