@@ -129,7 +129,7 @@ Aprendendo Doctrine
  de muitos para um (ManyToOne) entre Telefone e Aluno com as seguintes anotações:
 ```
     /**
-     * @ORM\Column (type="integer")
+     * @ORM\Column (type="string")
      */
     private $number;
     /**
@@ -155,7 +155,7 @@ Aprendendo Doctrine
 
 Obs.: 
 - o parâmetro targetEntity indica a Entidade alvo do relacionamento e o parâmetro mappedBy mostra atráves de qual entidade está sendo mapeado o relacionamento.
-- Para melhor controle de versionamento do banco de dados precisamos usar o Doctrine Migrations
+- Para melhor controle de versionamento do banco de dados precisamos usar o Doctrine Migrations.
 
 
 
