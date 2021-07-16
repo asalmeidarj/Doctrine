@@ -56,7 +56,6 @@ Aprendendo Doctrine
 - Após o mapeamento da classe Aluno, digite no terminal o comando:
     `php vendor\bin\doctrine orm:schema-tool:create`
 
-
 ## Usando o método persist e flush 
 
 - Crie um diretório commands na pasta um nível acima de src/.
@@ -84,7 +83,15 @@ Aprendendo Doctrine
 ```
     php commands\atualizar-nome-aluno.php 1 "Frederico"
 ```
-- Após atualizar o nome do aluno verifique digitando no terminal:
+- Após atualizar o nome do aluno de id = 1 para "Frederico" verifique digitando no terminal:
 ```
     php commands\mostrar-alunos.php
+```
+
+## Removendo um objeto com o método remove de EntityManagerInterface
+
+- Crie um arquivo [remover-aluno.php](https://github.com/asalmeidarj/Doctrine/blob/main/commands/remover-aluno.php) dentro do diretório commands.
+- Após criar o arquivo remover-aluno.php poderá remover um aluno pelo id digitando no terminal:
+```
+    php commands\remover-aluno.php
 ```
