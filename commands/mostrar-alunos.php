@@ -1,8 +1,5 @@
 <?php
 
-require_once 'vendor/autoload.php';
-
-
 // Conectar ao banco de dados
 $dataBasePath = __DIR__ . '/../var/data/banco.sqlite'; 
 $pdo = new PDO('sqlite:' . $dataBasePath);
