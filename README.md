@@ -77,7 +77,7 @@ Aprendendo Doctrine
     implementação de acordo com a sua necessidade.
 ```
 
-## Atualizando um dado utilizando o método find de EentityManagerInterface
+## Atualizando um dado utilizando o método find de EntityManagerInterface
 
 - Crie um arquivo [atualizar-nome-aluno.php](https://github.com/asalmeidarj/Doctrine/blob/main/commands/atualizar-nome-aluno.php) dentro do diretório commands.
 - Após criar o arquivo atualize o nome de um aluno pelo terminal digitando:
