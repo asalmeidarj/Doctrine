@@ -95,6 +95,7 @@ Aprendendo Doctrine
 ```
     php commands\remover-aluno.php id
 ```
+
     Obs.: No comando acima onde lê-se id substitua pelo número de id desejado.
 
 ## Criando uma nova Entidade Telefone e relacionando com Aluno
@@ -123,6 +124,46 @@ Aprendendo Doctrine
      */
     private $id;
 ```
+
+- Precisamos informar os tipos dos atributos $number e $aluno e informar que existe um relacionamento
+ de muitos para um (ManyToOne) entre Telefone e Aluno com as seguintes anotações:
+```
+    /**
+     * @ORM\Column (type="integer")
+     */
+    private $number;
+    /**
+     * @ORM\ManyToOne(targetEntity="Aluno")
+     */
+    private Aluno $aluno;
+```
+
+- Uma vez feito o mapeamento dentro da classe Telefone, precisamos criar os métodos addTelefone() e getTelefone() dentro da classe [Aluno](https://github.com/asalmeidarj/Doctrine/blob/main/src/Entity/Aluno.php).
+
+- É necessário indicar para ORM que existe um relacionamento de um para muitos (OneToMany) entre Aluno e Telefone com as seguints anotações:
+```
+    /**
+     * @ORM\OneToMany(targetEntity="Telefone", mappedBy="Aluno")
+     */
+    private $telefones;
+```
+
+- Caso o projeto ainda esteja em fase de desenvolvimento para atualizar o banco de dados basta fazer o update do esquema do banco de dados digitando no terminal:
+```
+    php vendor\bin\doctrine orm:schema-tool:update
+```
+
+Obs.: 
+- o parâmetro targetEntity indica a Entidade alvo do relacionamento e o parâmetro mappedBy mostra atráves de qual entidade está sendo mapeado o relacionamento.
+- Para melhor controle de versionamento do banco de dados precisamos usar o Doctrine Migrations
+
+
+
+
+
+
+
+
 
 
 
