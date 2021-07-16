@@ -93,5 +93,7 @@ Aprendendo Doctrine
 - Crie um arquivo [remover-aluno.php](https://github.com/asalmeidarj/Doctrine/blob/main/commands/remover-aluno.php) dentro do diretório commands.
 - Após criar o arquivo remover-aluno.php poderá remover um aluno pelo id digitando no terminal:
 ```
-    php commands\remover-aluno.php
+    php commands\remover-aluno.php id
 ```
+    Obs.: No comando acima onde lê-se id substitua pelo número de id desejado.
+
