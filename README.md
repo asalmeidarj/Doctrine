@@ -113,7 +113,7 @@ Aprendendo Doctrine
     }
 ```
 
-- Em seguida precisamos em forma que id é uma PRIMARY KEY com AUTO INCREMENT e do tipo INTEGER com as seguintes anotações:
+- Em seguida precisamos informar que id é uma PRIMARY KEY com AUTO INCREMENT e do tipo INTEGER com as seguintes anotações:
 ```
     /**
      * @ORM\Id
