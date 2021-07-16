@@ -14,5 +14,5 @@ $listAlunos = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 // Mostrar alunos
 foreach ($listAlunos as $aluno) {
-    echo "Name: {$aluno['nome']}" .PHP_EOL;
+    echo "Id: {$aluno['id']} Name: {$aluno['nome']}" .PHP_EOL;
 }
