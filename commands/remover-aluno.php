@@ -1,4 +1,4 @@
-|<?php
+<?php
 
 use Asalmeidarj\Doctrine\Entity\Aluno;
 use Asalmeidarj\Doctrine\Helper\EntityManagerFactory;
