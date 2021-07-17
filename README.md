@@ -192,5 +192,5 @@ Obs.:
     ];
 ```
 
-    Obs.: O trecho Asalmeidarj\Doctrine corresponde ao namespace escolhido  nas configurações iniciais
+Obs.: O trecho Asalmeidarj\Doctrine corresponde ao namespace escolhido  nas configurações iniciais
     do projeto. Vale ressaltar que no arquivo [composer.json](https://github.com/asalmeidarj/Doctrine/blob/main/composer.json) configuramos no Autoload com o namespace Asalmeidarj\Doctrine para apontar para pasta src/
