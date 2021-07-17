@@ -138,7 +138,7 @@ Aprendendo Doctrine
     private Aluno $aluno;
 ```
 
-- Uma vez feito o mapeamento dentro da classe Telefone, precisamos criar os métodos addTelefone() e getTelefone() dentro da classe [Aluno](https://github.com/asalmeidarj/Doctrine/blob/main/src/Entity/Aluno.php).
+- Uma vez feito o mapeamento dentro da classe Telefone, precisamos criar os métodos addTelefone() e getTelefone() dentro da [classe Aluno](https://github.com/asalmeidarj/Doctrine/blob/main/src/Entity/Aluno.php).
 
 - É necessário indicar para ORM que existe um relacionamento de um para muitos (OneToMany) entre Aluno e Telefone com as seguints anotações:
 ```
@@ -157,14 +157,40 @@ Obs.:
 - o parâmetro targetEntity indica a Entidade alvo do relacionamento e o parâmetro mappedBy mostra atráves de qual entidade está sendo mapeado o relacionamento.
 - Para melhor controle de versionamento do banco de dados precisamos usar o Doctrine Migrations.
 
+## Instalando Doctrine Migrations com Composer
 
+- Para iniciar a instalação do Doctrine Migrations com Composer, acesse o terminal e digite o comando:
+```
+    composer require doctrine/migrations
+```
 
+- Crie um diretório chamado Migrations dentro de src/.
+- Crie um arquivo [migrations.php](https://github.com/asalmeidarj/Doctrine/blob/main/migrations.php) um nível acima do diretório src/.
+- Crie um diretório chamado `Component` dentro de src/.
+- Configure o arquivo [migrations.php](https://github.com/asalmeidarj/Doctrine/blob/main/migrations.php) com as seguintes instruções:
 
+```
+    <?php
 
+    return [
+    'table_storage' => [
+        'table_name' => 'doctrine_migration_versions',
+        'version_column_name' => 'version',
+        'version_column_length' => 1024,
+        'executed_at_column_name' => 'executed_at',
+        'execution_time_column_name' => 'execution_time',
+    ],
+ 
+    'migrations_paths' => [
+        'Asalmeidarj\Doctrine\Migrations' => './src/Migrations',
+        'Asalmeidarj\Doctrine\Component\Migrations' => './src/Component/Migrations',
+    ],
 
+    'all_or_nothing' => true,
+    'check_database_platform' => true,
+    'organize_migrations' => 'none',
+    ];
+```
 
-
-
-
-
-
+    Obs.: O trecho Asalmeidarj\Doctrine corresponde ao namespace escolhido  nas configurações iniciais
+    do projeto. Vale ressaltar que no arquivo [composer.json](https://github.com/asalmeidarj/Doctrine/blob/main/composer.json) configuramos no Autoload com o namespace Asalmeidarj\Doctrine para apontar para pasta src/
